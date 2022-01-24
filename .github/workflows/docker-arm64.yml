@@ -3,6 +3,11 @@ name: stable
 on:
   push:
     branches: master
+  workflow_dispatch:
+  
+  repository_dispatch:
+    types:
+      - webhook
     
 jobs:
   buildx-arm64:
