@@ -46,7 +46,7 @@ jobs:
             --cache-from "type=local,src=/tmp/.buildx-cache" \
             --platform linux/arm64 \
             --output "type=image,push=true" \
-            --tag bartixxx32/tbot:latest-arm6 \
+            --tag bartixxx32/tbot:latest-arm64 \
             --file ./Dockerfile .
       -
         name: Docker Check Manifest
