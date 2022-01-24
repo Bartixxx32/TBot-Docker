@@ -25,7 +25,7 @@ jobs:
             --cache-to "type=local,dest=/tmp/.buildx-cache" \
             --platform linux/arm64 \
             --output "type=image,push=false" \
-            --tag bartixxx32/TBot:latest-arm64 \
+            --tag bartixxx32/tbot:latest-arm64 \
             --file ./Dockerfile .
       -
         name: Docker Login
@@ -41,7 +41,7 @@ jobs:
             --cache-from "type=local,src=/tmp/.buildx-cache" \
             --platform linux/arm64 \
             --output "type=image,push=true" \
-            --tag bartixxx32/TBot:latest-arm6 \
+            --tag bartixxx32/tbot:latest-arm6 \
             --file ./Dockerfile .
       -
         name: Docker Check Manifest
